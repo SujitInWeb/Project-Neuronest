@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height :100%;
+    width: 100%;
+    
+}
+#img{
+    position :absolute;
+    object-fit: cover;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    z-index: -1;
+
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4.5vw;
+    background: transparent;
+}
+.nav h2 img{
+    height: 3.5vw;
+    width: 3.5vw;
+    padding-top: 1.2vw;
+}
+.nav h2{
+    font-size: clamp(2rem, 2.7vw, 3vw);
+    padding-bottom: 0.2vw;
+}
+.nav-part2 {
+    padding-top: 10px;
+    display: flex;
+    gap: 4vw;
+    font-size: 1.2vw;
+    align-items: center;
+}
+.nav span{
+    color: grey;
+}
+@media (max-width:445px){
+    .main .content .left{
+        padding-bottom :200px;
+    }
+}
+@media (max-width: 778px) {
+    .nav h2 img{
+        padding-top: 15px;
+        height: 40px;
+        width: 30px;
+    }
+    .nav .nav-part2 img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .nav-part2 a{
+        display: none;
+    }
+    .nav-part2 button{
+        display: none;
+    }
+    .left button{
+        height: 40px;
+        width: 130px;
+        font-size: 30px;
+    }
+    .works{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 500px;
+    }
+    .works .work-left{
+        width: 100%;
+        height: auto;
+    }
+    .works .work-right{
+        width: 100%;
+        padding-top: 40px;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+    .pg-division #contact{
+        width: 100%;
+        padding: 5vw;
+        margin-bottom: 30px;
+    }
+    .pg-division #contact #name{
+        height: 25px;
+        width: 100%;
+    }
+    .pg-division #contact #email{
+        height: 25px;
+        width: 100%;
+    }
+    .pg-division #blog{
+        width: 100%;
+        padding: 5vw;
+    }
+    .pg-division{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer .social{
+        width: 20%;
+    }
+    .footer .letterbox{
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+    }
+    .footer .signup{
+        width: 100%;
+        
+    }
+    .footer .display #email{
+        flex-direction: row;
+        width: 60%;
+        height: 40px;
+    }
+    .footer .display button{
+        width: 40%;
+        height: 40px;
+        border: 1px solid #303130;
+    }
+    .footer .title h2{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+     .footer .title .logo-container img{
+        height: 50px;
+        width: 50px;
+    }
+}
+.nav-part2 img{
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+.nav button{
+    padding: 0.75vw 2vw;
+    border: #47627D;
+    font-size: 1.2vw;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 20vw;
+    cursor: pointer;
+}
+.nav-part2 a{
+    font-size: clamp(1.2rem, 0.5rem, 1.2rem);
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+.nav-part2 a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #000;
+    transition: all .5s;
+}
+.nav-part2 a:hover::before{
+    width: 100%;
+
+}
+.nav-part2 a:hover{
+    text-decoration: none;
+    color: #47627D;
+}
+
+.content{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    height: 60%;
+    width: 100%;
+    text-align: center;
+    padding: 1vw 18vw;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, transparent 100%) ;
+}
+.left h1{
+    font-size: clamp(2rem, 3.5vw, 3vw);
+}
+.left span{
+    color: rgb(92, 92, 92);
+}
+.left p{
+    font-size: clamp(1rem, 1.3vw, 1.5vw);
+    margin: 3vw 1.75vw;
+    color:#FFFFFF ;
+}
+.right{
+    height: 40%;
+    width: 100%;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.left button{
+    padding: 1vw 1.5vw;
+    font-size: clamp(10px, 1.2vw, 1.5vw);
+    color: #fff;
+    background-color: #000;
+    border: #47627D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line-separator{
+    height: 2px;
+    width: 200px;
+    background-color: #000;
+}
+#features h2{
+    font-size: 2vw;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #303130;
+}
+.page-inner{
+    width: 92%;
+    background-color: #ECEEED;
+    border-radius: 20px;
+    padding: 10vw 10vw 0 10vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 10%;
+}
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.purpose{
+    width: 100%;
+}
+.purpose h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-bottom: 1.5vw;
+}
+.purpose .line-separator{
+    width: 50%;
+} 
+.purpose p{
+    padding: 1vw 0;
+    font-size: clamp(1rem, 1.3vw,1.5vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+}
+#about{
+    padding: 0 0 2vw 0;
+    padding-bottom: 75px;
+}
+#about h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-bottom: 1.5vw;
+}
+#about p{
+    padding: 1vw 0;
+    font-size: clamp(1rem, 1.3vw,1.5vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+}
+.works{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 30px;
+}
+.work-left{
+    height: 100%;
+    width: 50%;
+}
+.work-left h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-bottom: 1.5vw;
+}
+.work-left p{
+    padding: 1.5vw 0;
+    font-size: clamp(1rem, 1.3vw,1.5vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+}
+.work-right{
+    height: 50%;
+    width:50%;
+
+}
+.work-right img{
+    margin-left: 100px;
+    object-fit: contain;
+    height: auto;
+    width: 50%;
+}
+.purpose video{
+    object-fit: contain;
+    z-index: 100;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 1vw;
+    margin: 3vw 0;
+}
+#features{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#features h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-bottom: 1.5vw;
+}
+#features .line-separator{
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 1.5vw;
+}
+.achivements h3{
+    font-size: clamp(1.5rem , 1.2vw, 1.2vw);
+    padding: 1.5vw 0;
+}
+.feature-item p{
+    font-size: clamp(1rem, 1.2vw, 1.2vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+}
+.achivements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 0;
+;
+}
+.achivements h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-top: 1vw;
+    padding-bottom: 2.5vw;
+}
+.achivements h4{
+    font-size: clamp(1.5rem , 1.2vw, 1.2vw);
+    padding: 1.5vw 0;
+}
+.achivements .line-separator{
+    width: 30%;
+}
+.achivements p{
+    font-size: clamp(1rem, 1.3vw,1.5vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+}
+.achivements img{
+    object-fit: cover;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.img-container {
+  margin: 2vw 0;
+  position: relative; 
+  width: 100%;
+  height: auto;
+  
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.img-txt {
+  position: absolute;
+  bottom: 1vw;
+  left: 2vw;
+  color: white;
+  z-index: 2;
+  max-width: 94%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.img-txt h3,
+.img-txt p {
+  margin: 0 0 0.5rem 0;
+}
+.page-inner2{
+    width: 92%;
+    background-color: #eceeed;
+    border-radius: 20px;
+    padding: 5vw 5vw 5vw 5vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 10%;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5vw;
+    margin-bottom: 50px;
+    background-color: #000;
+    border-radius: 20px;
+
+}
+#contact h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-bottom: 1.5vw;
+    color: #ECEEED;
+}
+#contact p{
+    font-size: clamp(1rem, 1.3vw,1.5vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+    padding: 1vw 0;
+    color: #ECEEED;
+}
+span{
+    color: rgb(92, 92, 92);
+}
+#contact .line-separator{
+    background-color: #ECEEED;
+}
+#contact #name{
+    height: 2vw;
+    width: 100%;
+}
+#contact label{
+    color: #ECEEED;
+}
+#contact #email{
+    height: 2vw;
+    width: 100%;
+}
+#contact #message{
+    height: 10vw;
+    width: 100%;
+    resize: none;
+}
+#contact input, #contact textarea{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5vw 1vw;
+    box-shadow: none;
+    outline: none;
+}
+#contact button{
+    padding: 1vw 2vw;
+    border: #303130;
+    font-size: clamp(0.25rem,0.75rem,1rem);
+    background-color: #303130;
+    color: #fff;
+    border-radius: 5px;
+}
+#contact .contact-part2{
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+}
+.pg-division{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pg-division .line-separator-vertical{
+    width: 2px;
+    height: 50vh;
+    margin: 15vh 1.2vh;
+    background-color: #000;
+}
+#blog{
+    padding-left: 2vw;
+    width: 50%;
+    padding: 5vw;
+}
+#blog h2{
+    font-size: clamp(3rem , 3vw, 3vw);
+    padding-bottom: 1.5vw;
+}
+#blog p{
+    font-size: clamp(1rem, 1.3vw,1.5vw);
+    line-height: 1.5rem;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+    padding: 1vw 0;
+}
+#blog article{
+    padding: 2vw ;
+    margin: 1vw 0;
+    border-radius: 20px;
+    border: 2px solid #47627D;
+}
+.footer{
+    width: 100%;
+    background-color: #000;
+    padding: 5vw 5vw 5vw 5vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo-container img{
+    height: 3vw;
+    width: 3vw;
+    margin: 2vw 1.2vw 0 2vw;
+}
+.logo-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer a{
+    color: #ECEEED;
+}
+.footer .title h2{
+    font-size: clamp(2.5rem, 3.9vw, 3.9vw);
+    color: #ECEEED;
+    margin-right: 0.7vw;
+}
+.copyright{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    color: #ECEEED;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ECEEED;
+}
+.footer .social a{
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+    flex-wrap: nowrap;
+    display: flex;
+    padding: 0.5vw;
+    flex-direction: column;
+    margin: 0 2vw;
+    font-size: clamp(1.2rem, 1vw, 1vw);
+    text-decoration: none;
+}
+.letterbox{
+    padding-top: 0.5vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.letterbox label{
+    color: #ECEEED;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+    font-size: clamp(1.2rem, 1vw, 1.2vw);
+}
+.letterbox.display{
+    display: flex;
+    flex-direction: row;
+}
+.display input{
+    height: 2.5vw;
+    width: 65%;
+    border: 2px solid #ECEEED;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: none;
+    outline: none
+}
+.display button{
+    color: #ECEEED;
+    border: none;
+    height: 2.5vw;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width:33%;
+    background-color: #303130;
+    box-shadow: none;
+    outline: none;
+}
