@@ -509,6 +509,11 @@ span{
 #contact .contact-part2{
     font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
 }
+#contact .contact-part2 a{
+    text-decoration: none;
+    color: #eceeeda2;
+    
+}
 .pg-division{
     display: flex;
     flex-direction: row;
