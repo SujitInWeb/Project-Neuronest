@@ -369,7 +369,7 @@ html,body{
 }
 .achivements h3{
     font-size: clamp(1.5rem , 1.2vw, 1.2vw);
-    padding: 1.5vw 0;
+    padding: 1.5vw 0 ;
 }
 .feature-item p{
     font-size: clamp(1rem, 1.2vw, 1.2vw);
