@@ -101,8 +101,6 @@ This project demonstrates proficiency in:
 
 - **Desktop**: 1200px and above
 - **Tablet**: 778px - 1199px
-- **Mobile**: 445px - 777px
-- **Small Mobile**: Below 445px
 
 ## 🎥 Media Requirements
 
