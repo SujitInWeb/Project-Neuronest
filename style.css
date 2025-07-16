@@ -113,6 +113,9 @@ html,body{
         font-size: 30px;
         padding: 30px 0;
     }
+    #blog h2{
+        font-size: 30px;
+    }
     
     .main .content .left{
         padding-bottom :200px;
@@ -132,13 +135,18 @@ html,body{
     }
     footer .footer .title h2{
         margin: 0;
-        padding: 0;
+        padding: 0 10px;
     }
     footer .logo-container img{
-        margin: 0;
+        margin: 0 10px;
+    }
+    footer .footer .social{
+        width: 200px;
     }
     footer .footer .social a{
         margin: 10px 0;
+        width: 200px;
+
     }
     .copyright{
         padding: 6vw;
@@ -188,7 +196,6 @@ html,body{
         object-fit: contain;
         margin-left: 0;
         padding: 1vw 6vw 1vw 6vw;
-        
     }
     .pg-division #contact{
         width: 100%;
@@ -712,7 +719,7 @@ span{
     color: #ECEEED;
     border: none;
     height: 2.5vw;
-    padding: 0.5vw 1vw;
+    padding: 0.57vw 1vw;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -720,4 +727,8 @@ span{
     background-color: #303130;
     box-shadow: none;
     outline: none;
+    cursor: pointer;
+}
+#email{
+    padding: 10px;
 }
