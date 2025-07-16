@@ -7,7 +7,6 @@
 html,body{
     height :100%;
     width: 100%;
-    
 }
 #img{
     position :absolute;
@@ -53,10 +52,62 @@ html,body{
 .nav span{
     color: grey;
 }
-@media (max-width:445px){
+@media (max-width : 375px){
     body{
-        width: 430px;
+        width: 375px;
     }
+    #img{
+        width: 375px;
+    }
+    .purpose .block h2, .works .work-left h2,.achivements .block h2, #about .block h2
+    {
+        font-size: 30px;
+        padding: 30px 0;
+    }
+    
+    .main .content .left{
+        padding-bottom :100px;
+    }
+    .page {
+        padding-top: 10px ;
+        width: 375px;
+    }
+    .img-txt{
+        display: none;
+    }
+    .footer {
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+    }
+    footer .footer .title h2{
+        margin: 0;
+        padding: 0;
+    }
+    footer .logo-container img{
+        margin: 0;
+    }
+    footer .footer .social a{
+        margin: 10px 0;
+    }
+    .copyright{
+        padding: 6vw;
+        height: 40px;
+        width: 375px;
+    }
+}
+@media (max-width:445px){
+    html,body{
+        width: 445px;
+    }
+    #img{
+        width: 445px;
+    }
+    .main{
+        width: 445px;
+    }
+    
     .purpose .block h2, .works .work-left h2,.achivements .block h2, #about .block h2
     {
         font-size: 30px;
@@ -67,10 +118,32 @@ html,body{
         padding-bottom :200px;
     }
     .page {
-        padding-top: 60px ;
+        padding-top: 10px ;
+        width: 445px;
     }
     .img-txt{
         display: none;
+    }
+    .footer {
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+    }
+    footer .footer .title h2{
+        margin: 0;
+        padding: 0;
+    }
+    footer .logo-container img{
+        margin: 0;
+    }
+    footer .footer .social a{
+        margin: 10px 0;
+    }
+    .copyright{
+        padding: 6vw;
+        height: 40px;
+        width: 445px;
     }
 }
 @media (max-width: 778px) {
@@ -598,7 +671,7 @@ span{
     color: #ECEEED;
     align-items: center;
     justify-content: center;
-    border-top: 2px solid #ECEEED;
+    border-top: 1px solid #ECEEED;
 }
 .footer .social a{
     font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
