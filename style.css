@@ -146,10 +146,11 @@ html,body{
     footer .footer .social a{
         margin: 10px 0;
         width: 200px;
-
+        text-align: center;
     }
     .copyright{
-        padding: 6vw;
+        padding: 7vw;
+        border-top:  1px solid #ECEEED;
         height: 40px;
         width: 445px;
     }
