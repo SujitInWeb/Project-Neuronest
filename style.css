@@ -55,13 +55,11 @@ html,body{
     color: grey;
 }
 @media (max-width : 375px){
-    body #img{
-        object-fit: cover;
-    }
     body{
         width: 375px;
     }
     #img{
+        object-fit: cover;
         width: 375px;
     }
     .purpose .block h2, .works .work-left h2,.achivements .block h2, #about .block h2
